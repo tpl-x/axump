@@ -11,8 +11,12 @@ pub fn with_tracing(config: &crate::config::AppConfig) -> TraceLayer<HttpMakeCla
     if let Ok(level) = Level::from_str(config.log_level.as_str()) {
         _tracing_level = level
     }
-    let info_file = rolling::daily(config.log_dir.clone(), config.log_name_prefix.clone())
+    let info_file = rolling::daily(
+        config.log_dir.clone(),
+        config.log_name_prefix.clone(),
+    )
         .with_max_level(_tracing_level);
+    
     tracing_subscriber::fmt()
         .with_writer(info_file)
         .with_ansi(false)
