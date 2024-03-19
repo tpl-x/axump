@@ -1,0 +1,3 @@
+[workspace]
+members = [ "{{project-name}}"]
+resolver = "2"
