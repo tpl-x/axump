@@ -1,0 +1,9 @@
+[template]
+cargo_generate_version = ">=0.9.0"
+
+[hooks]
+pre = ["ask-license.rhai"]
+
+[placeholders]
+project-name = { type="string", prompt="📦 Project name?" ,default="app"}
+author = { type="string", prompt="👤 Author name?" ,default="czyt"}
