@@ -1,2 +1,2 @@
 # {{project-name}}
-  {{project-desc}}
+  {{description}}

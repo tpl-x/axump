@@ -5,4 +5,4 @@ cargo_generate_version = ">=0.9.0"
 pre = ["ask-license.rhai"]
 
 [placeholders]
-description = { type = "text", prompt = "😄please provide some description to the project?", default = "A axum base rust web project" }
+description = { type = "string", prompt = "😄please provide some description to the project?", default = "A axum base rust web project" }
