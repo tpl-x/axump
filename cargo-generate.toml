@@ -2,4 +2,10 @@
 cargo_generate_version = ">=0.9.0"
 
 [hooks]
-pre = ["ask-license.rhai"]
+pre = [
+    "ask-license.rhai",
+    "create-readme.rhai",
+]
+
+[placeholders]
+description = { type = "text", prompt = "😄please provide some description to the project?", default = "A axum base rust web project" }

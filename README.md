@@ -1,2 +1,2 @@
-# axump
-rust axum project template
+# {{project-name}}
+  {{project-desc}}
